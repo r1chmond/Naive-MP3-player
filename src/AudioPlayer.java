@@ -255,7 +255,7 @@ public class AudioPlayer extends Application {
         topSection.setAlignment(Pos.CENTER);
 
         //--- centre ---
-        Image logo = new Image("appicon.png");
+        Image logo = new Image("images/appicon.png");
        ImageView forLogo = new ImageView(logo);
        forLogo.setFitHeight(350);
        forLogo.setFitWidth(300);
@@ -305,22 +305,22 @@ public class AudioPlayer extends Application {
     sliders.getChildren().addAll( lbltimePlayed,audioCount,lbltotalTime, volumeLbl, volumeCount);
 
     HBox controls = new HBox();
-    Image prevImg = new Image("previcon.png");
+    Image prevImg = new Image("images/previcon.png");
     ImageView prevImgView = new ImageView(prevImg);
     prevImgView.setFitHeight(25);
     prevImgView.setFitWidth(30);
     Button prevBtn = new Button("", prevImgView);
     prevBtn.setOnAction(this::prevBtnAction);
 
-   playImg = new Image("playicon.png");
+   playImg = new Image("images/playicon.png");
     playImgView = new ImageView(playImg);
     playImgView.setFitHeight(25);
     playImgView.setFitWidth(30);
     Button playBtn = new Button("", playImgView);
-    pauseImg = new Image("pause.png");
+    pauseImg = new Image("images/pause.png");
     playBtn.setOnAction(this::playBtnAction);
 
-    Image nextImg = new Image("nexticon.png");
+    Image nextImg = new Image("images/nexticon.png");
     ImageView nextImgView = new ImageView(nextImg);
     nextImgView.setFitHeight(25);
     nextImgView.setFitWidth(30);
@@ -345,7 +345,7 @@ public class AudioPlayer extends Application {
     Scene scene = new Scene(root, 700, 650);
     scene.getStylesheets().addAll("playerStyleSheet.css");
 
-    stage.getIcons().add(new Image("appicon.png"));
+    stage.getIcons().add(new Image("images/appicon.png"));
     stage.setTitle("My mp3 player");
     stage.setScene(scene);
     stage.show();
