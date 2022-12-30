@@ -381,9 +381,12 @@ public class AudioPlayer extends Application {
     {
         time /= 1000;
         String seconds = formatTime(time % 60);
+        seconds = toTens(seconds);
 
         time /= 60;
         String minutes = formatTime(time % 60);
+
+        minutes = toTens(minutes);
 
         time /= 60;
         String hours = formatTime(time % 60);
@@ -396,6 +399,14 @@ public class AudioPlayer extends Application {
         }
     }
 
+    public String toTens(String time){
+
+        int num = Integer.parseInt(time);
+        if ( num < 10){
+            return  "0"+time;
+        }
+        return time;
+    }
     /**
      * Casts the time into an integer
      * and changes it to a string
