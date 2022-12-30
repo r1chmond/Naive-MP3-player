@@ -1,0 +1,87 @@
+.root {
+    -fx-background-image: url("background.png");
+    }
+
+    /* list view styling */
+    .list-cell{
+       -fx-font-size: 14;
+       -fx-background-radius: 10px;
+    }
+
+    .list-cell:filled:selected:selected{
+        -fx-background-color: #559ef5;
+    }
+
+    .list-cell:filled:hover{
+        -fx-background-color: #b0e0e6;
+        -fx-text-fill: white;
+    }
+
+    .list-view .scroll-bar:vertical {
+        -fx-background-color: transparent;
+
+    }
+    .list-view .scroll-bar:vertical .thumb{
+        -fx-background-color: #6495ed;
+    }
+
+    .list-view .scroll-bar:horizontal {
+            -fx-background-color: transparent;
+        }
+
+     .list-view .scroll-bar:horizontal .thumb{
+                -fx-background-color: #6495ed;
+            }
+
+    .list-cell:empty {  /* hide empty cells */
+        -fx-opacity: 0;
+    }
+
+.list-view .scroll-bar:horizontal .increment-button{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
+.list-view .scroll-bar:horizontal .decrement-button{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
+
+list-view .scroll-bar:vertical .increment-button{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
+.list-view .scroll-bar:vertical .decrement-button{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
+
+       /* button style */
+        .button {
+                -fx-background-Color: white;
+                -fx-border-radius: 40;
+                -fx-background-radius: 40;
+
+                    -fx-cursor: hand;
+        }
+
+        .addBtnStyle {
+        -fx-text-fill: white;
+                    -fx-font-family: "Lucida Console";
+                    -fx-font-weight: bold;
+                     -fx-font-size: 13;
+
+                     -fx-background-Color: #559ef5;
+
+        }
+
+
+        .slider .track{
+            -fx-background-color: #dcdcdc;
+            -fx-padding: 3px;
+        }
+
+        .slider .thumb{
+            -fx-pref-height: 10px;
+            -fx-pref-width: 8px;
+            -fx-background-color: #6495ed;
+        }
